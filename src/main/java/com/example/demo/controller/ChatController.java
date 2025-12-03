@@ -44,7 +44,7 @@ public class ChatController {
         List<Message> history = chatService.getChatHistory(user.getId());
         return ResponseEntity.ok(history);
     }
-
+    
     // ---------------- REQUEST BODY RECORD ----------------
     public record ChatRequest(String content) {}
 }
